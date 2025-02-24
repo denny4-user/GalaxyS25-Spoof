@@ -69,6 +69,9 @@ public class MainHook implements IXposedHookLoadPackage {
         // ro.system.model
         XposedHelpers.setStaticObjectField(Build.class, "SYSTEM.MODEL", "SM-S938N");
 
+        // ro.system.model
+        XposedHelpers.setStaticObjectField(Build.class, "MODEL", "SM-S938N");
+
         // ro.product.flavor
         XposedHelpers.setStaticObjectField(Build.class, "FLAVOUR", "pa3q-user");
 
