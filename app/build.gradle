@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-    namespace 'com.risenid.huskyspoof'
+    namespace 'com.risenid.s25spoof'
     compileSdk 34
 
     defaultConfig {
-        applicationId "com.risenid.huskyspoof"
+        applicationId "com.risenid.s25spoof"
         minSdk 29
         targetSdk 34
         versionCode 3
