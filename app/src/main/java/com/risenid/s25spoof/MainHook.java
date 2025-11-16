@@ -15,7 +15,7 @@
  * (at your option) any later version.
  */
 
-package com.risenid.huskyspoof;
+package com.risenid.s25spoof;
 
 import android.os.Build;
 
@@ -28,7 +28,7 @@ public class MainHook implements IXposedHookLoadPackage {
 
     @Override
     public void handleLoadPackage(XC_LoadPackage.LoadPackageParam lpparam) throws Throwable {        
-        XposedBridge.log("GalaxyS25Spoof: Hooking into: " + lpparam.packageName);
+        XposedBridge.log("s25 Spoof: Hooking into: " + lpparam.packageName);
 
         // ============ DEVICE IDENTIFICATION ============
         
@@ -185,6 +185,6 @@ public class MainHook implements IXposedHookLoadPackage {
         // ro.opengles.version (for OpenGL detection in PUBG)
         XposedHelpers.setStaticObjectField(Build.class, "OPENGLES_VERSION", "196610");
 
-        XposedBridge.log("GalaxyS25Spoof: Device spoofed to Samsung Galaxy S25 Ultra ✓");
+        XposedBridge.log("s25 Spoof: Device spoofed to Samsung Galaxy S25 Ultra ✓");
     }
 }
