@@ -76,16 +76,16 @@ public class MainHook implements IXposedHookLoadPackage {
         XposedHelpers.setStaticObjectField(Build.class, "FLAVOUR", "pa3q-user");
 
         // ro.soc.model
-        XposedHelpers.setStaticObjectField(Build.class, "SOC.MODEL", "SM8750-AB");
+        XposedHelpers.setStaticObjectField(Build.class, "SOC.MODEL", "SM8750");
 
         // ro.product.board
         XposedHelpers.setStaticObjectField(Build.class, "BOARD", "pa3q");
 
         // ro.build.id
-        XposedHelpers.setStaticObjectField(Build.class, "ID", "BP11.241210.004");
+        XposedHelpers.setStaticObjectField(Build.class, "ID", "AP38.245");
 
         // ro.build.fingerprint
         XposedHelpers.setStaticObjectField(Build.class, "FINGERPRINT",
-                "samsung/pa3q/pa3q:14/BP11.241210.004/S938NKSU1AYB3:user/release-keys");
+                "samsung/pa3q/pa3q:15/AP38.245/S938NKSU1AYF6:user/release-keys");
     }
 }
